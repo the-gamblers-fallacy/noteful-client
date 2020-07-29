@@ -82,7 +82,9 @@ class App extends Component {
 
     render() {
         const contextValue ={
-            deleteNote: this.deleteNote
+            deleteNote: this.deleteNote,
+            folders: this.state.folders,
+            notes: this.state.notes
         }
         return (
             <ApiContext.Provider value={contextValue}>
